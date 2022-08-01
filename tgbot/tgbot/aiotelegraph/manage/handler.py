@@ -10,6 +10,7 @@ def create(path_handler: str, handler_name: str):
         if not os.path.exists(add_path):
             os.mkdir(add_path)
 
+    os.mkdir(path_handler)
     open(os.path.join(path_handler, '__init__.py'), 'w')
 
     with open(os.path.join(path_handler, 'handlers.py'), 'w') as f:
@@ -62,6 +63,7 @@ def massage_view(data):
     with open(os.path.join(path_handler, 'buttons/reply.yml'), 'w') as f:
         f.write(f'# Reply buttons: {handler_name}\n\n')
 
+        os.mkdir(os.path.join(path_handler, 'texts'))
     for language_name in LIST_LANGUAGES:
         os.mkdir(os.path.join(path_handler, f'texts/{language_name}'))
         with open(os.path.join(path_handler, f'texts/{language_name}/{handler_name}.yml'), 'w') as f:

@@ -3,7 +3,7 @@ from dataclasses import dataclass
 
 import yaml
 
-from tgbot.tgbot.settings import DEFAULT_LANGUAGE
+from settings import DEFAULT_LANGUAGE
 
 
 @dataclass
@@ -14,8 +14,8 @@ class UserLanguage:
 user_language = UserLanguage(name=DEFAULT_LANGUAGE)
 
 
-def text(file_name: str, file_type: str = 'yml'):
-    path = os.getcwd() + '/texts'
+def text(file_name: str, file_type: str, file_path: str):
+    path = file_path + 'texts'
 
     if not os.path.exists(f'{path}{file_name}.{file_type}'):
         file_path = f'{path}/{user_language.name}/{file_name}.{file_type}'

@@ -1,6 +1,6 @@
 from aiogram import Dispatcher
             
-from tgbot.example.handlers import *
+from example.handlers import *
 
 
 def register_handlers(dp: Dispatcher):

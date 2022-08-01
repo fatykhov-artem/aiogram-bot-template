@@ -4,9 +4,9 @@ from aiogram import Dispatcher
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from loguru import logger as log
 
+from tgbot import aiotelegraph
 from tgbot.config import config
-import tgbot.tgbot.launch as launch
-import tgbot.tgbot.aiotelegraph as aiograph
+import tgbot.launch as launch
 
 
 async def main():

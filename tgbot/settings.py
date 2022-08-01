@@ -10,10 +10,13 @@ LIST_LANGUAGES = ['en', 'ru']
 PARSE_MODE = 'HTML'
 
 HANDLERS = [
-    'tgbot.example'
+    'example'
 ]
 
-MIDDLEWARES = []
+MIDDLEWARES = [
+    'tgbot.middlewares.set_user_language',
+    'tgbot.middlewares.debug_log'
+]
 
 FILTERS = []
 
