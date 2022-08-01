@@ -1,0 +1,10 @@
+env: local
+debug: true
+project_name: <your_project_name>
+
+url: https://example.com
+
+bot:
+  token: <your_bot_token>
+  name: <your_bot_name>
+  files_chat_id: <files_chat_id>

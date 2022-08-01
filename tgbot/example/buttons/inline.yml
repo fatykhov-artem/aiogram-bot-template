@@ -1,0 +1,6 @@
+# Inline buttons: example
+
+# Example:
+open_back_page:
+  view: main
+  action: open_back_page
