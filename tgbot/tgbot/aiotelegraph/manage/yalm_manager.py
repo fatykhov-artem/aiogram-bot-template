@@ -4,7 +4,7 @@ import yaml
 
 from settings import ROOT_DIR
 
-class YalmManager:
+class TextManager:
 
     @staticmethod
     def load(path: str) -> dict:

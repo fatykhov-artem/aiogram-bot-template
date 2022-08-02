@@ -1,3 +1,3 @@
-from tgbot.aiotelegraph.manage.yalm_manager import YalmManager
+from tgbot.aiotelegraph.manage.yalm_manager import TextManager
 
-YalmManager = YalmManager()
+YalmManager = TextManager()
